@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.chart.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.openjfx.FXMLDocumentController">
+    <children>
+        <VBox prefHeight="1079.0" prefWidth="649.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <BorderPane VBox.vgrow="ALWAYS">
+                    <top>
+                        <Region BorderPane.alignment="CENTER" />
+                    </top>
+                    <bottom>
+                        <Label text="Selection Sort" BorderPane.alignment="TOP_CENTER">
+                            <font>
+                                <Font name="System Bold" size="14.0" />
+                            </font>
+                        </Label>
+                    </bottom>
+                    <center>
+                        <BarChart fx:id="ssChart" animated="false" barGap="1.0" categoryGap="0.0" legendVisible="false" BorderPane.alignment="CENTER">
+                            <xAxis>
+                                <CategoryAxis fx:id="ss_xAxis" opacity="0.0" side="BOTTOM" visible="false" />
+                            </xAxis>
+                            <yAxis>
+                                <NumberAxis fx:id="ss_yAxis" minorTickVisible="false" side="LEFT" upperBound="30.0" />
+                            </yAxis>
+                        </BarChart>
+                    </center>
+                </BorderPane>
+                <BorderPane>
+                    <top>
+                        <Region />
+                    </top>
+                    <bottom>
+                        <Label text="Insertion Sort" BorderPane.alignment="TOP_CENTER"> 
+                            <font>
+                                <Font name="System Bold" size="14.0" />
+                            </font>
+                        </Label>
+                    </bottom>
+                    <center>
+                        <BarChart fx:id="isChart" animated="false" barGap="1.0" categoryGap="0.0" legendVisible="false" BorderPane.alignment="CENTER">
+                            <xAxis>
+                                <CategoryAxis fx:id="is_xAxis" disable="true" opacity="0.0" side="BOTTOM" tickLabelGap="0.0" />
+                            </xAxis>
+                            <yAxis>
+                                <NumberAxis fx:id="is_yAxis" animated="false" forceZeroInRange="false" minorTickVisible="false" side="LEFT" upperBound="30.0" />
+                            </yAxis>
+                        </BarChart>
+                    </center>
+                </BorderPane>
+                <BorderPane>
+                    <center>
+                        <BarChart fx:id="bsChart" animated="false" barGap="1.0" categoryGap="0.0" legendVisible="false" BorderPane.alignment="CENTER">
+                            <xAxis>
+                                <CategoryAxis fx:id="bs_xAxis" opacity="0.0" side="BOTTOM" visible="false" />
+                            </xAxis>
+                            <yAxis>
+                                <NumberAxis fx:id="bs_yAxis" minorTickVisible="false" side="LEFT" upperBound="30.0" />
+                            </yAxis>
+                        </BarChart>
+                    </center>
+                    <bottom>
+                        <Label text="Bubble Sort" BorderPane.alignment="TOP_CENTER">
+                            <font>
+                                <Font name="System Bold" size="14.0" />
+                            </font>
+                        </Label>
+                    </bottom>
+                    <top>
+                        <Region BorderPane.alignment="CENTER" />
+                    </top>
+                </BorderPane>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>
